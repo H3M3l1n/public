@@ -1,0 +1,47 @@
+.todo
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50vw
+    padding: 2rem
+    border: 2px solid black
+    border-top: none
+    background-color: white
+    &-add
+        &-input
+            height: 24px
+            box-sizing: border-box
+            border: 1px solid black
+            border-right: none
+        &-button
+            border: 1px solid black
+            border-left: none
+            font-family: 'Kanit', sans-serif
+            cursor: pointer
+            &:hover
+                color: white
+                background-color: blue
+    &-list
+        list-style-type: none
+    &-item
+        height: 1.25rem
+        max-width: 100%
+        margin-top: 5px
+        &-check
+            vertical-align: middle
+            margin: 0 3px 0 0
+            user-select: none
+            cursor: pointer
+            accent-color: black
+            &:checked + .todo-item-text
+                text-decoration: line-through
+                text-decoration-color: red
+        &-text
+            display: inline-block
+            vertical-align: middle
+            padding: 0 5px
+            font-size: 1rem
+        &-remove
+            user-select: none
+            cursor: pointer

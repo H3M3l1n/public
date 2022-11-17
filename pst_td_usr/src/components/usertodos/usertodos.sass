@@ -1,0 +1,48 @@
+.user-todos
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 50vw
+    padding: 2rem
+    border: 2px solid black
+    border-top: none
+    background-color: white
+    &-name
+        margin: 0
+    &-list
+        list-style-type: none
+    &-item
+        height: 1.25rem
+        margin-top: 5px
+        &-check
+            margin: 0 3px 0 0
+            vertical-align: middle
+            user-select: none
+            accent-color: black
+            cursor: pointer
+            &:checked + .user-todos-item-text
+                text-decoration: line-through
+                text-decoration-color: red
+        &-text
+            display: inline-block
+            vertical-align: middle
+            font-size: 1rem
+            padding: 0 5px
+        &-remove
+            user-select: none
+            cursor: pointer
+    &-add
+        margin-top: 1em
+        &-input
+            height: 24px
+            box-sizing: border-box
+            border: 1px solid black
+            border-right: none
+        &-button
+            border: 1px solid black
+            border-left: none
+            font-family: 'Kanit', sans-serif
+            cursor: pointer
+            &:hover
+                color: white
+                background-color: blue

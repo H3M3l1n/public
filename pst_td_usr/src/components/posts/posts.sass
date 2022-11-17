@@ -1,0 +1,50 @@
+.posts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 50vw
+    padding: 2rem
+    border: 2px solid black
+    border-top: none
+    background-color: white
+    &-form
+        width: 100%
+        margin-top: 2rem
+        &:first-of-type
+            margin: 0
+        &-label
+            display: block
+            box-sizing: border-box
+            font-family: 'Kanit', sans-serif
+        &-area
+            display: block
+            width: 100%
+            height: 50px
+            box-sizing: border-box
+            resize: none
+        &-error
+            height: 1.5rem
+            &-text
+                font-family: 'Kanit', sans-serif
+                color: red
+        &-button
+            border: 1px solid black
+            font-family: 'Kanit', sans-serif
+            cursor: pointer
+            &:hover
+                color: white
+                background-color: blue
+    &-list
+        margin: 2rem 0 0 0
+        padding-inline-start: 1.5rem
+        list-style-type: circle
+    &-item
+        margin-top: 0.5rem
+        font-size: 1.25rem
+        text-align: justify
+        &::first-letter
+            text-transform: uppercase
+            font-weight: bold
+        &:first-of-type
+            margin-top: 0
